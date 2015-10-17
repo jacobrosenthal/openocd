@@ -753,8 +753,8 @@ static int nrf51_erase_page(struct flash_bank *bank,
 			if (sector->is_erased == 1)
 				return ERROR_OK;
 
-			LOG_ERROR("The chip was not pre-programmed with SoftDevice stack and UICR cannot be erased separately. Please issue mass erase before trying to write to this region");
-			return ERROR_FAIL;
+			LOG_WARNING("The chip was not pre-programmed with SoftDevice stack and UICR cannot be erased separately. Please issue mass erase before trying to write to this region");
+			return ERROR_OK;
 		};
 
 		res = nrf51_nvmc_generic_erase(chip,
