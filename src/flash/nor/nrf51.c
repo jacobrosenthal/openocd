@@ -301,6 +301,13 @@ static const struct nrf51_device_spec nrf51_known_devices_table[] = {
 		.flash_size_kb	= 256,
 	},
 
+	{
+		.hwid		= 0x0057,
+		.variant	= "QFAA",
+		.build_code	= "G2",
+		.flash_size_kb	= 256,
+	},
+
 	/* nRF51422 Devices (IC rev 3). */
 	{
 		.hwid		= 0x0073,
