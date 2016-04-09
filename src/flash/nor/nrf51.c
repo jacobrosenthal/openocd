@@ -387,6 +387,14 @@ static const struct nrf51_device_spec nrf51_known_devices_table[] = {
 		.build_code	= "B00",
 		.flash_size_kb	= 512,
 	},
+
+	/* nRF52832 Devices (IC rev 1). */
+	{
+		.hwid		= 0x00B8,
+		.variant	= "QFN48",
+		.build_code	= "AB",
+		.flash_size_kb	= 512,
+	},
 };
 
 static int nrf51_bank_is_probed(struct flash_bank *bank)
